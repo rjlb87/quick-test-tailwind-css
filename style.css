@@ -1,0 +1,33 @@
+
+.card {
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.active-card {
+  border: 1px solid;
+  border-image: linear-gradient(to bottom, red, black, white);
+  border-image-slice: 1;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); 
+  transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+.arrow-up {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 1.2em;
+}
+
+.font-just-sans-light {
+  font-family: "Just Sans", sans-serif;
+  font-weight: 300; 
+}
+.custom-font {
+  font-family: "Barlow", sans-serif;
+}

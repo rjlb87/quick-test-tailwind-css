@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quick Test</title>
+  </head>
+  <script src="./script.js"></script>
+
+  <body
+    class="flex flex-col items-center justify-center min-h-screen bg-gray-100 py-20 mx-4"
+  >
+    <h1
+      class="font-just-sans-light text-2xl font-semibold mb-6 md:right-72 pr-10 relative"
+    >
+      Select Distribution
+    </h1>
+
+    <div
+      class="flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-10"
+    >
+      <!-- Card 1 -->
+      <div
+        class="card bg-white p-4 rounded-md cursor-pointer border"
+        onclick="toggleCard('basicCard1')"
+        id="basicCard1"
+      >
+        <div class="flex flex-col items-start px-2">
+          <img class="h-16" src="./icons/airplane.png" alt="Icon" />
+          <div class="pl-4 pb-8">
+            <div
+              class="font-just-sans-light text-xl font-semibold text-red-600"
+            >
+              Basic
+            </div>
+            <div class="text-black font-just-sans-light">
+              Published to 100+ new sites
+              <span class="arrow-up">
+                <img
+                  src="./icons/arrowUp.svg"
+                  alt="Arrow Up Icon"
+                  class="w-4 h-3 inline"
+                />
+              </span>
+            </div>
+          </div>
+          <div class="custom-font font-bold text-4xl pl-4">
+            $74.99
+            <span class="text-lg font-just-sans-light inline-block pl-4">
+              Per release
+              <img
+                src="./icons/info.svg"
+                alt="Info Icon"
+                class="w-5 h-4 inline ml-2"
+              />
+            </span>
+          </div>
+
+          <div class="mt-4 pl-2 space-y-2 pl-4 pr-20 font-just-sans-light">
+            <p>
+              <svg
+                class="h-6 w-6 inline mr-2 text-green-500 relative"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <circle cx="12" cy="12" r="9" fill="#08c7a3" />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  d="M5 13l4 4L19 7"
+                  stroke="#ffffff"
+                ></path>
+              </svg>
+              Published on digital journal
+            </p>
+            <p>
+              <svg
+                class="h-6 w-6 inline mr-2 text-green-500 relative"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <circle cx="12" cy="12" r="9" fill="#08c7a3" />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  d="M5 13l4 4L19 7"
+                  stroke="#ffffff"
+                ></path>
+              </svg>
+              Sent to Google News
+            </p>
+            <p class="pb-32">
+              <svg
+                class="h-6 w-6 inline mr-2 text-green-300 relative"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <circle cx="12" cy="12" r="9" fill="#08c7a3" />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  d="M5 13l4 4L19 7"
+                  stroke="#ffffff"
+                ></path>
+              </svg>
+              And many more
+            </p>
+          </div>
+          <div class="pt-4">
+            <input type="checkbox" id="basicCard1" class="hidden" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div
+        class="card bg-white p-4 rounded-md cursor-pointer border"
+        onclick="toggleCard('basicCard2')"
+        id="basicCard2"
+      >
+        <div class="flex flex-col items-start px-2">
+          <img class="h-16" src="./icons/rocket.png" alt="Icon" />
+          <div class="pl-4 pb-8">
+            <div
+              class="font-just-sans-light text-xl font-semibold text-red-600"
+            >
+              US National
+            </div>
+            <div class="text-black font-just-sans-light">
+              Published to 200+ new sites
+              <span class="arrow-up">
+                <img
+                  src="./icons/arrowUp.svg"
+                  alt="Arrow Up Icon"
+                  class="w-4 h-3 inline"
+                />
+              </span>
+            </div>
+          </div>
+          <div class="custom-font font-bold text-4xl pl-4">
+            $419.99
+            <span class="text-lg font-just-sans-light inline-block pl-4">
+              Per release
+              <img
+                src="./icons/info.svg"
+                alt="Info Icon"
+                class="w-5 h-4 inline ml-2"
+            /></span>
+          </div>
+          <div class="mt-4 pl-2 space-y-2 pl-4 pr-20 font-just-sans-light">
+            <p>
+              <svg
+                class="h-6 w-6 inline mr-2 text-green-500 relative"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <circle cx="12" cy="12" r="9" fill="#08c7a3" />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  d="M5 13l4 4L19 7"
+                  stroke="#ffffff"
+                ></path>
+              </svg>
+              Published on digital journal
+            </p>
+            <p>
+              <svg
+                class="h-6 w-6 inline mr-2 text-green-500 relative"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <circle cx="12" cy="12" r="9" fill="#08c7a3" />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  d="M5 13l4 4L19 7"
+                  stroke="#ffffff"
+                ></path>
+              </svg>
+              Published on PRnewswire.com
+            </p>
+            <p>
+              <svg
+                class="h-6 w-6 inline mr-2 text-green-300 relative"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <circle cx="12" cy="12" r="9" fill="#08c7a3" />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  d="M5 13l4 4L19 7"
+                  stroke="#ffffff"
+                ></path>
+              </svg>
+              Published on Yahoo finance
+            </p>
+            <p>
+              <svg
+                class="h-6 w-6 inline mr-2 text-green-300 relative"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <circle cx="12" cy="12" r="9" fill="#08c7a3" />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  d="M5 13l4 4L19 7"
+                  stroke="#ffffff"
+                ></path>
+              </svg>
+              Sent to market watch
+            </p>
+            <p>
+              <svg
+                class="h-6 w-6 inline mr-2 text-green-300 relative"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <circle cx="12" cy="12" r="9" fill="#08c7a3" />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  d="M5 13l4 4L19 7"
+                  stroke="#ffffff"
+                ></path>
+              </svg>
+              Sent to google news
+            </p>
+            <p class="pb-32">
+              <svg
+                class="h-6 w-6 inline mr-2 text-green-300 relative"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <circle cx="12" cy="12" r="9" fill="#08c7a3" />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  d="M5 13l4 4L19 7"
+                  stroke="#ffffff"
+                ></path>
+              </svg>
+              And many more
+            </p>
+          </div>
+          <div class="pt-4">
+            <input type="checkbox" id="basicCard2" class="hidden" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
